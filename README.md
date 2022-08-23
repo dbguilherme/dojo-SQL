@@ -14,12 +14,12 @@ Estão incluídos um Script `docker-compose` que inicializa 2 containers, um par
 3. Acesse o PgAdmin  [http://localhost:5555/](http://localhost:5555/) com o usuário e senha;
 
    3.1 - Abra o terminal conecte no postgres (sudo -u postgres psql) e verifique qual usuário está criado (\du)
-   4.
-   5.2 - Se não tiver usuário criado, crie: `create user teste`
    
-   7.3 - Defina senha: `ALTER USER teste WITH PASSWORD 'senha'`;
+   3.2 - Se não tiver usuário criado, crie: `create user teste`
    
-   7.4 - Testar a coneção com o usuário: `psql -u teste -h localhost -W`
+   3.3 - Defina senha: `ALTER USER teste WITH PASSWORD 'senha'`;
+   
+   3.4 - Testar a coneção com o usuário: `psql -u teste -h localhost -W`
    
 4. Crie um novo database: create database dvd;
 5. Carregue o banco  dvdrental.tar;
