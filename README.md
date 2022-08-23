@@ -12,10 +12,15 @@ Estão incluídos um Script `docker-compose` que inicializa 2 containers, um par
 1. Clone o código deste repositório `$ git clone https://github.com/economiagovbr/dojo-SQL.git`
 2. Acesse o diretório do material `$ cd dojo-SQL`
 3. Acesse o PgAdmin  [http://localhost:5555/](http://localhost:5555/) com o usuário e senha;
+
    3.1 - Abra o terminal conecte no postgres (sudo -u postgres psql) e verifique qual usuário está criado (\du)
-   3.2 - Se não tiver usuário criado, crie: `create user teste`
-   3.3 - Defina senha: ALTER USER teste WITH PASSWORD 'senha';
-   3.4 - Testar a coneção com o usuário psql -u teste -h localhost -W
+   4.
+   5.2 - Se não tiver usuário criado, crie: `create user teste`
+   
+   7.3 - Defina senha: `ALTER USER teste WITH PASSWORD 'senha'`;
+   
+   7.4 - Testar a coneção com o usuário: `psql -u teste -h localhost -W`
+   
 4. Crie um novo database: create database dvd;
 5. Carregue o banco  dvdrental.tar;
    `pg_restore --host "localhost" --port "5432" --username "teste"  --dbname "dvd" --verbose "dvdrental.tar"`
